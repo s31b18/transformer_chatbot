@@ -45,12 +45,11 @@ def get_trainer_config():
                        'openai_parameters_dir': './parameters',
                        'last_checkpoint_path': './checkpoints/last_checkpoint',
                        'interrupt_checkpoint_path': './checkpoints/interrupt_checkpoint',
-                       'train_datasets': ['./datasets/ConvAI2/train_self_revised_no_cands.txt',
-                                          './datasets/ConvAI2/train_self_original_no_cands.txt',
-                                          './datasets/DailyDialog/train_dailydialog.txt'],
-                       'test_datasets': ['./datasets/ConvAI2/valid_self_revised_no_cands.txt',
-                                         './datasets/ConvAI2/valid_self_original_no_cands.txt',
-                                         './datasets/DailyDialog/valid_dailydialog.txt']})
+                       'train_datasets': ['./ParlAI/data/ConvAI2/train_self_revised_no_cands.txt',
+                                          './ParlAI/data/ConvAI2/train_self_original_no_cands.txt',
+                                          ],
+                       'test_datasets': ['./ParlAI/data/ConvAI2/valid_self_revised_no_cands.txt',
+                                         './ParlAI/data/ConvAI2/valid_self_original_no_cands.txt',
+                                         ]})
 
     return config
-
